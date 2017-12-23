@@ -19,6 +19,8 @@ public class JointTest : MonoBehaviour
     public HingeJoint joint1;
     public HingeJoint joint2;
     public HingeJoint joint3;
+
+    public bool applyRandomToAll;
     // public Vector3 force;
     public float target1;
     public float target2;
@@ -33,7 +35,6 @@ public class JointTest : MonoBehaviour
     {
         if (joint != null)
         {
-            target = Random.value;
             JointSpring js;
             js = joint.spring;
             var safeTarget = Mathf.Clamp(target, 0, 1);
@@ -48,8 +49,14 @@ public class JointTest : MonoBehaviour
      
     void FixedUpdate ()
     {
-        ApplyTarget(joint1, target1);
-        ApplyTarget(joint2, target2);
-        ApplyTarget(joint3, target3);
+        if (applyRandomToAll){
+            ApplyTarget(joint1, Random.value);
+            ApplyTarget(joint2, Random.value);
+            ApplyTarget(joint3, Random.value);
+        } else {
+            ApplyTarget(joint1, target1);
+            ApplyTarget(joint2, target2);
+            ApplyTarget(joint3, target3);
+        }
     }
 }

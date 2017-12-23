@@ -468,7 +468,7 @@ GameObject:
   - component: {fileID: 1390520798}
   - component: {fileID: 1390520799}
   m_Layer: 0
-  m_Name: ragDo
+  m_Name: ragSnake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -502,6 +502,7 @@ MonoBehaviour:
   joint1: {fileID: 0}
   joint2: {fileID: 0}
   joint3: {fileID: 0}
+  applyRandomToAll: 0
   target1: 0
   target2: 0
   target3: 0
@@ -519,6 +520,7 @@ MonoBehaviour:
   joint1: {fileID: 1636480640}
   joint2: {fileID: 24965359}
   joint3: {fileID: 745543723}
+  applyRandomToAll: 0
   target1: 0
   target2: 0
   target3: 0
