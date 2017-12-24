@@ -520,10 +520,10 @@ MonoBehaviour:
   joint1: {fileID: 1636480640}
   joint2: {fileID: 24965359}
   joint3: {fileID: 745543723}
-  applyRandomToAll: 0
-  target1: 0
-  target2: 0
-  target3: 0
+  applyRandomToAll: 1
+  target1: 0.5
+  target2: 0.5
+  target3: 0.5
 --- !u!1 &1439225385
 GameObject:
   m_ObjectHideFlags: 0
